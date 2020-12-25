@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>I LOVE YOU</title>
+        <style>
+            .body {
+                background: #A1C3D1;
+            }
+            .circle1 {
+                width: 70em;
+                height: 70em;
+                border-radius: 50%;
+                display: inline-block;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #B39BC8;
+            }
+            .circle2 {
+                width: 50em;
+                height: 50em;
+                border-radius: 50%;
+                display: inline-block;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #F172A1;
+            }
+            .button {
+              background-color: #E64398;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 8em;
+              margin: 4px 2px;
+              cursor: pointer;
+              border-radius: 100%;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            </style>
+        <script>
+            var sound = new Audio();
+            sound.src = "JINGLES.wav";
+        </script>
+    </head>
+    <body class="body">
+        <div class="circle1">
+            <div class="circle2">
+                <nav>
+                    <a href="#" onmousedown="sound.play()" class="button">I Love You</a>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
