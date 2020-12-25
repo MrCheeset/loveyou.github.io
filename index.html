@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>I LOVE YOU</title>
+        <title>LOVE YOU</title>
         <style>
             .body {
                 background: #A1C3D1;
@@ -37,7 +37,7 @@
               text-align: center;
               text-decoration: none;
               display: inline-block;
-              font-size: 8em;
+              font-size: 7em;
               margin: 4px 2px;
               cursor: pointer;
               border-radius: 100%;
@@ -49,14 +49,24 @@
             </style>
         <script>
             var sound = new Audio();
-            sound.src = "JINGLES.wav";
+            var sound2 = new Audio();
+            sound.src = "Video.mp4";
+            sound2.src = "Video_1.mp4";
+            //if(Math.floor(Math.random() * 2) == 0) {
+            function playSound() {
+                if(Math.floor(Math.random() * 2) == 0) {
+                    sound.play();
+                } else {
+                    sound2.play();
+                }
+            }
         </script>
     </head>
     <body class="body">
         <div class="circle1">
             <div class="circle2">
                 <nav>
-                    <a href="#" onmousedown="sound.play()" class="button">I Love You</a>
+                    <a href="#" onmousedown="playSound()" class="button">Love You Mimi</a>
                 </nav>
             </div>
         </div>
